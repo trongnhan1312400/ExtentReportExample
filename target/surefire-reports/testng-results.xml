@@ -2,16 +2,16 @@
 <testng-results skipped="2" failed="2" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="N11 Test Suite" duration-ms="58031" started-at="2018-03-20T09:59:19Z" finished-at="2018-03-20T10:00:17Z">
+  <suite name="N11 Test Suite" duration-ms="78092" started-at="2018-03-20T14:09:03Z" finished-at="2018-03-20T14:10:21Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="58031" started-at="2018-03-20T09:59:19Z" finished-at="2018-03-20T10:00:17Z">
+    <test name="LoginTest" duration-ms="78092" started-at="2018-03-20T14:09:03Z" finished-at="2018-03-20T14:10:21Z">
       <class name="tests.LoginTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@7e0ea639]" name="setup" is-config="true" duration-ms="4382" started-at="2018-03-20T16:59:19Z" finished-at="2018-03-20T16:59:24Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LoginTests@7f690630]" name="setup" is-config="true" duration-ms="17346" started-at="2018-03-20T21:09:03Z" finished-at="2018-03-20T21:09:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:tests.LoginTests@7e0ea639]" name="invalidLoginTest_InvalidUserNameInvalidPassword" duration-ms="30641" started-at="2018-03-20T16:59:24Z" description="Invalid Login Scenario with wrong username and password." finished-at="2018-03-20T16:59:54Z">
+        <test-method status="SKIP" signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:tests.LoginTests@7f690630]" name="invalidLoginTest_InvalidUserNameInvalidPassword" duration-ms="37257" started-at="2018-03-20T21:09:21Z" description="Invalid Login Scenario with wrong username and password." finished-at="2018-03-20T21:09:58Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [E-posta adresiniz veya ÅŸifreniz hatalÄ±] but found [E-posta adresiniz veya şifreniz hatalı]]]>
@@ -48,19 +48,19 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest_InvalidUserNameInvalidPassword -->
-        <test-method status="FAIL" signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:tests.LoginTests@7e0ea639]" name="invalidLoginTest_InvalidUserNameInvalidPassword" duration-ms="6558" started-at="2018-03-20T16:59:55Z" description="Invalid Login Scenario with wrong username and password." finished-at="2018-03-20T17:00:01Z">
+        <test-method status="FAIL" signature="invalidLoginTest_InvalidUserNameInvalidPassword()[pri:0, instance:tests.LoginTests@7f690630]" name="invalidLoginTest_InvalidUserNameInvalidPassword" duration-ms="9651" started-at="2018-03-20T21:09:58Z" description="Invalid Login Scenario with wrong username and password." finished-at="2018-03-20T21:10:08Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [E-posta adresiniz veya ÅŸifreniz hatalÄ±] but found [E-posta adresiniz veya şifreniz hatalı]]]>
@@ -97,19 +97,19 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest_InvalidUserNameInvalidPassword -->
-        <test-method status="SKIP" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.LoginTests@7e0ea639]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="5670" started-at="2018-03-20T17:00:02Z" description="Invalid Login Scenario with empty username and password." finished-at="2018-03-20T17:00:07Z">
+        <test-method status="SKIP" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.LoginTests@7f690630]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="5549" started-at="2018-03-20T21:10:08Z" description="Invalid Login Scenario with empty username and password." finished-at="2018-03-20T21:10:14Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [LÃ¼tfen e-posta adresinizi girin.] but found [Lütfen e-posta adresinizi girin.]]]>
@@ -146,19 +146,19 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest_EmptyUserEmptyPassword -->
-        <test-method status="FAIL" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.LoginTests@7e0ea639]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="8579" started-at="2018-03-20T17:00:08Z" description="Invalid Login Scenario with empty username and password." finished-at="2018-03-20T17:00:16Z">
+        <test-method status="FAIL" signature="invalidLoginTest_EmptyUserEmptyPassword()[pri:1, instance:tests.LoginTests@7f690630]" name="invalidLoginTest_EmptyUserEmptyPassword" duration-ms="5826" started-at="2018-03-20T21:10:14Z" description="Invalid Login Scenario with empty username and password." finished-at="2018-03-20T21:10:20Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [LÃ¼tfen e-posta adresinizi girin.] but found [Lütfen e-posta adresinizi girin.]]]>
@@ -195,19 +195,19 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidLoginTest_EmptyUserEmptyPassword -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@7e0ea639]" name="teardown" is-config="true" duration-ms="662" started-at="2018-03-20T17:00:17Z" finished-at="2018-03-20T17:00:17Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.LoginTests@7f690630]" name="teardown" is-config="true" duration-ms="998" started-at="2018-03-20T21:10:20Z" finished-at="2018-03-20T21:10:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

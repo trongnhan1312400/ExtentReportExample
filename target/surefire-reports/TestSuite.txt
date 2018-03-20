@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 58.79 sec <<< FAILURE! - in TestSuite
-invalidLoginTest_InvalidUserNameInvalidPassword(tests.LoginTests)  Time elapsed: 6.56 sec  <<< FAILURE!
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 79.351 s <<< FAILURE! - in TestSuite
+invalidLoginTest_InvalidUserNameInvalidPassword(tests.LoginTests)  Time elapsed: 9.987 s  <<< FAILURE!
 java.lang.AssertionError: expected [E-posta adresiniz veya şifreniz hatalı] but found [E-posta adresiniz veya ?ifreniz hatal?]
 	at tests.LoginTests.invalidLoginTest_InvalidUserNameInvalidPassword(LoginTests.java:37)
 
-invalidLoginTest_EmptyUserEmptyPassword(tests.LoginTests)  Time elapsed: 8.579 sec  <<< FAILURE!
+invalidLoginTest_EmptyUserEmptyPassword(tests.LoginTests)  Time elapsed: 6.151 s  <<< FAILURE!
 java.lang.AssertionError: expected [Lütfen e-posta adresinizi girin.] but found [L�tfen e-posta adresinizi girin.]
 	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:56)
 
