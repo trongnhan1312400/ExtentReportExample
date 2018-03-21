@@ -11855,7 +11855,6 @@ $.fn.dynamicTestSearch = function(id) {
         } else {
             target.each(function() {
                 var t = $(this);
-                console.log(t)
                 if (pattern.test(t.html())) {
                     t.removeClass('hide').addClass('displayed');
                 } else {

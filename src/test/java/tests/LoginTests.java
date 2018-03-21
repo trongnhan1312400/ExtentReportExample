@@ -17,6 +17,9 @@ public class LoginTests extends BaseTest {
     public void invalidLoginTest_InvalidUserNameInvalidPassword () throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.getTest().setDescription("Invalid Login Scenario with wrong username and password.");
+        
+        //ExtentReports Category
+        ExtentTestManager.getTest().assignCategory("Invalid");
 
         //*************PAGE INSTANTIATIONS*************
         HomePage homePage = new HomePage(driver,wait);
@@ -41,6 +44,7 @@ public class LoginTests extends BaseTest {
     public void invalidLoginTest_EmptyUserEmptyPassword () throws InterruptedException {
         //ExtentReports Description
         ExtentTestManager.getTest().setDescription("Invalid Login Scenario with empty username and password.");
+        ExtentTestManager.getTest().assignCategory("Empty");
 
         //*************PAGE INSTANTIATIONS*************
         HomePage homePage = new HomePage(driver,wait);
