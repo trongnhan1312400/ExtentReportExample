@@ -21,10 +21,12 @@ public class Retry implements IRetryAnalyzer {
                 count++;                                     //Increase the maxTry count by 1
                 iTestResult.setStatus(ITestResult.FAILURE);  //Mark test as failed and take base64Screenshot
                 extendReportsFailOperations(iTestResult);    //ExtentReports fail operations
+                ExtentTestManager.endTest();
                 return true;                                 //Tells TestNG to re-run the test
             }
         } else {
             iTestResult.setStatus(ITestResult.SUCCESS);      //If test passes, TestNG marks it as passed
+            ExtentTestManager.endTest();
         }
         return false;
     }

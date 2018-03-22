@@ -1,6 +1,10 @@
 package utils.Listeners;
 
 import com.relevantcodes.extentreports.LogStatus;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -13,9 +17,20 @@ import utils.ExtentReports.ExtentTestManager;
 
 
 public class TestListener extends BaseTest implements ITestListener {
-
+	static private String startedTime = "";
+	
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
+    }
+    
+    private static String getStartedTime()
+    {
+    	if (TestListener.startedTime == "")
+    	{
+    		TestListener.startedTime = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+    	}
+    	
+    	return TestListener.startedTime;
     }
 
     @Override
@@ -28,15 +43,20 @@ public class TestListener extends BaseTest implements ITestListener {
     public void onFinish(ITestContext iTestContext) {
         System.out.println("I am in onFinish method " + iTestContext.getName());
         //Do tier down operations for extentreports reporting!
-        ExtentTestManager.endTest();
+        //ExtentTestManager.endTest();
         ExtentManager.getReporter().flush();
     }
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
         System.out.println("I am in onTestStart method " +  getTestMethodName(iTestResult) + " start");
+        String suiteName = iTestResult.getTestContext().getCurrentXmlTest().getSuite().getName();
         //Start operation for extentreports.
+       
         ExtentTestManager.startTest(iTestResult.getMethod().getMethodName(),"");
+        
+        String suiteCategory = (suiteName + " " + TestListener.getStartedTime()).replace(" ", "_");
+        ExtentTestManager.getTest().assignCategory(suiteCategory);
     }
 
     @Override
@@ -44,6 +64,7 @@ public class TestListener extends BaseTest implements ITestListener {
         System.out.println("I am in onTestSuccess method " +  getTestMethodName(iTestResult) + " succeed");
         //Extentreports log operation for passed tests.
         ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
+        ExtentTestManager.endTest();
     }
 
     @Override
@@ -61,6 +82,7 @@ public class TestListener extends BaseTest implements ITestListener {
         //Extentreports log and screenshot operations for failed tests.
         ExtentTestManager.getTest().log(LogStatus.FAIL,"Test Failed",
                 ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));
+        ExtentTestManager.endTest();
     }
 
     @Override
@@ -68,11 +90,13 @@ public class TestListener extends BaseTest implements ITestListener {
         System.out.println("I am in onTestSkipped method "+  getTestMethodName(iTestResult) + " skipped");
         //Extentreports log operation for skipped tests.
         ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+        ExtentTestManager.endTest();
     }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
         System.out.println("Test failed but it is in defined success ratio " + getTestMethodName(iTestResult));
+        ExtentTestManager.endTest();
     }
 
 }

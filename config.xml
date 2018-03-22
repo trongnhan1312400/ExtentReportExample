@@ -34,42 +34,43 @@
     <scripts>
       <![CDATA[
         $.fn.dynamicTestSearchExternally = function(id) {
-    var target = $(this);
-    var searchBox = $(id);
+            var target = $(this);
+            var searchBox = $(id);
 
-    searchBox.off('keyup').on('keyup', function() {
-        if (searchBox.val() == '') {
-            target.removeClass('hide').addClass('displayed');
-        } else {
-            var condition = parseTimeRangeCondition(searchBox.val());
-
-            if ($.isEmptyObject(condition))
-            {
-                pattern = RegExp(searchBox.val(), 'gi');
-                target.each(function() {
-                var t = $(this);
-                if (pattern.test(t.html())) {
-                    t.removeClass('hide').addClass('displayed');
+            searchBox.off('keyup').on('keyup', function() {
+                if (searchBox.val() == '') {
+                    target.removeClass('hide').addClass('displayed');
                 } else {
-                    t.removeClass('displayed').addClass('hide');
-                }
-            });
-            } else {
-                target.each(function() {
-                    var t = $(this);
+                    var condition = parseTimeRangeCondition(searchBox.val());
 
-                    if (check(condition, getTestBeginTime(t))) {
-                        t.removeClass('hide').addClass('displayed');
+                    if ($.isEmptyObject(condition))
+                    {
+                        var searchText = searchBox.val();
+                        target.each(function() {
+                            var t = $(this);
+                            if (t.html().indexOf(searchText) >= 0) {
+                                t.removeClass('hide').addClass('displayed');
+                            } else {
+                                t.removeClass('displayed').addClass('hide');
+                            }
+                        });
                     } else {
-                        t.removeClass('displayed').addClass('hide');
-                    }
-                });
-            }
-        }
-    });
+                        target.each(function() {
+                            var t = $(this);
 
-    return target;
-}
+                            if (check(condition, getTestBeginTime(t))) {
+                                t.removeClass('hide').addClass('displayed');
+                            } else {
+                                t.removeClass('displayed').addClass('hide');
+                            }
+                        });
+                    };
+                }
+                redrawCharts();
+            });
+
+            return target;
+        }
 
 
 
