@@ -41,16 +41,30 @@
         if (searchBox.val() == '') {
             target.removeClass('hide').addClass('displayed');
         } else {
-            target.each(function() {
-                var condition = parseTimeRangeCondition(searchBox.val());
-                var t = $(this);
+            var condition = parseTimeRangeCondition(searchBox.val());
 
-                if (check(condition, getTestBeginTime(t))) {
+            if ($.isEmptyObject(condition))
+            {
+                pattern = RegExp(searchBox.val(), 'gi');
+                target.each(function() {
+                var t = $(this);
+                if (pattern.test(t.html())) {
                     t.removeClass('hide').addClass('displayed');
                 } else {
                     t.removeClass('displayed').addClass('hide');
                 }
-            });
+            })
+            } else {
+                target.each(function() {
+                    var t = $(this);
+
+                    if (check(condition, getTestBeginTime(t))) {
+                        t.removeClass('hide').addClass('displayed');
+                    } else {
+                        t.removeClass('displayed').addClass('hide');
+                    }
+                })
+            };
         }
     });
 
@@ -104,7 +118,6 @@ function check(condition, value)
 {
     if ("end" in condition && "begin" in condition)
     {
-        console.log(value);
         return value >= condition.begin && value <= condition.end;
     }
 
@@ -114,8 +127,6 @@ function check(condition, value)
 function getTestBeginTime(jqueryElement)
 {
     var startedTimeElements = jqueryElement.find("span[title|='Test started time']");
-    console.log(startedTimeElements);
-    //if (0 == startedTimeElements.length) return -1;
 
     return Date.parse(startedTimeElements.text().trim());
 }

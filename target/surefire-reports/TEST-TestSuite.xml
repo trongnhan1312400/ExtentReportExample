@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="40.892" tests="4" errors="0" skipped="2" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="42.669" tests="4" errors="0" skipped="2" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="F:\nhan.trong.nguyen - 6187\WorkSpace\Share\WorkSync\JavaNew\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3256866723653338408.tmp"/>
+    <property name="classworlds.conf" value="F:\nhan.trong.nguyen - 6187\WorkSpace\Share\WorkSync\JavaNew\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7670293703817685744.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_152/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_152/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_152/bin/../jre/lib/amd64;C:\Perl64\site\bin;C:\Perl64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Users\satt17.03.08\AppData\Local\Programs\Python\Python36;C:\Users\satt17.03.08\AppData\Local\Programs\Python\Python36\Scripts;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;F:\nhan.trong.nguyen - 6187\Libraries and plugins\Plugins\apache-maven-3.5.0\bin\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\;C:\Program Files\Java\jdk1.8.0_152\bin\;C:\Program Files (x86)\Skype\Phone\;D:\allure-2.6.0\bin;D:\apache-maven-3.5.3\bin;C:\Users\nhan.trong.nguyen\.cargo\bin;C:\Users\nhan.trong.nguyen\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\nhan.trong.nguyen\AppData\Local\Programs\Python\Python36\;D:\;F:\nhan.trong.nguyen - 6187\IDE\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -66,13 +66,115 @@
 I am in onTestStart method invalidLoginTest_InvalidUserNameInvalidPassword start
 I am in onTestSkipped method invalidLoginTest_InvalidUserNameInvalidPassword skipped
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 24244
+    <system-err><![CDATA[Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 27483
 Only local connections are allowed.
-Mar 21, 2018 3:13:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 22, 2018 8:48:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:366)
+	at com.relevantcodes.extentreports.utils.DateTimeUtil.getDate(DateTimeUtil.java:22)
+	at com.relevantcodes.extentreports.converters.TestConverter.createTestList(TestConverter.java:94)
+	at com.relevantcodes.extentreports.ExtentReports.<init>(ExtentReports.java:93)
+	at com.relevantcodes.extentreports.ExtentReports.<init>(ExtentReports.java:375)
+	at utils.ExtentReports.ExtentManager.getReporter(ExtentManager.java:17)
+	at utils.ExtentReports.ExtentTestManager.<clinit>(ExtentTestManager.java:18)
+	at utils.Listeners.TestListener.onTestStart(TestListener.java:39)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:366)
+	at com.relevantcodes.extentreports.utils.DateTimeUtil.getDate(DateTimeUtil.java:22)
+	at com.relevantcodes.extentreports.converters.TestConverter.createTestList(TestConverter.java:94)
+	at com.relevantcodes.extentreports.ExtentReports.<init>(ExtentReports.java:93)
+	at com.relevantcodes.extentreports.ExtentReports.<init>(ExtentReports.java:375)
+	at utils.ExtentReports.ExtentManager.getReporter(ExtentManager.java:17)
+	at utils.ExtentReports.ExtentTestManager.<clinit>(ExtentTestManager.java:18)
+	at utils.Listeners.TestListener.onTestStart(TestListener.java:39)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(DateFormat.java:366)
+	at com.relevantcodes.extentreports.utils.DateTimeUtil.getDate(DateTimeUtil.java:22)
+	at com.relevantcodes.extentreports.converters.TestConverter.createTestList(TestConverter.java:94)
+	at com.relevantcodes.extentreports.ExtentReports.<init>(ExtentReports.java:93)
+	at com.relevantcodes.extentreports.ExtentReports.<init>(ExtentReports.java:375)
+	at utils.ExtentReports.ExtentManager.getReporter(ExtentManager.java:17)
+	at utils.ExtentReports.ExtentTestManager.<clinit>(ExtentTestManager.java:18)
+	at utils.Listeners.TestListener.onTestStart(TestListener.java:39)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1739)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1714)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:640)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 ]]></system-err>
   </testcase>
-  <testcase name="invalidLoginTest_InvalidUserNameInvalidPassword" classname="tests.LoginTests" time="7.386">
+  <testcase name="invalidLoginTest_InvalidUserNameInvalidPassword" classname="tests.LoginTests" time="7.982">
     <failure message="expected [E-posta adresiniz veya ÅŸifreniz hatalÄ±] but found [E-posta adresiniz veya şifreniz hatalı]" type="java.lang.AssertionError">java.lang.AssertionError: expected [E-posta adresiniz veya ÅŸifreniz hatalÄ±] but found [E-posta adresiniz veya şifreniz hatalı]
 	at tests.LoginTests.invalidLoginTest_InvalidUserNameInvalidPassword(LoginTests.java:40)
 </failure>
@@ -86,7 +188,7 @@ I am in onTestFailure method invalidLoginTest_InvalidUserNameInvalidPassword fai
 I am in onTestSkipped method invalidLoginTest_EmptyUserEmptyPassword skipped
 ]]></system-out>
   </testcase>
-  <testcase name="invalidLoginTest_EmptyUserEmptyPassword" classname="tests.LoginTests" time="6.605">
+  <testcase name="invalidLoginTest_EmptyUserEmptyPassword" classname="tests.LoginTests" time="10.411">
     <failure message="expected [LÃ¼tfen e-posta adresinizi girin.] but found [Lütfen e-posta adresinizi girin.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LÃ¼tfen e-posta adresinizi girin.] but found [Lütfen e-posta adresinizi girin.]
 	at tests.LoginTests.invalidLoginTest_EmptyUserEmptyPassword(LoginTests.java:60)
 </failure>
