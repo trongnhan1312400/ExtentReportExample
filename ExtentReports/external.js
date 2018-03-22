@@ -31,6 +31,7 @@ $.fn.dynamicTestSearchExternally = function(id) {
                 });
             };
         }
+        redrawCharts();
     });
 
     return target;

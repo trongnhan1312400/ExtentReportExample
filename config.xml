@@ -53,7 +53,7 @@
                 } else {
                     t.removeClass('displayed').addClass('hide');
                 }
-            })
+            });
             } else {
                 target.each(function() {
                     var t = $(this);
@@ -63,8 +63,8 @@
                     } else {
                         t.removeClass('displayed').addClass('hide');
                     }
-                })
-            };
+                });
+            }
         }
     });
 
